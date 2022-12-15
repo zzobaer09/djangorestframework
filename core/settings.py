@@ -37,7 +37,17 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
+    "rest_framework",
+
+    "user",
 ]
+
+AUTH_USER_MODEL = "user.User"
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
